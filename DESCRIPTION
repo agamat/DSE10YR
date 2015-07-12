@@ -1,0 +1,9 @@
+Package: DSE10YR
+Type: Package
+Title: Support Functions and Datasets for DSE
+Version: 1.0
+Date: 2015-07-12
+Author: Syed M. Fuad
+Maintainer: Syed M. Fuad <syed.m.fuad@gmail.com>
+Description: Functions and 10-yr Datasets to support time series analysis on Dhaka STock Exchange 
+License: GPL-3
