@@ -33,7 +33,7 @@ load <- function(id1, summarize = FALSE) {
 
 call <- function(year, coname){
   period <- load(year)
-  com <- subset(period, period$COMPANYNAME == coname)
+  com <- subset(period, period$Company == coname)
   return(com)
 }
 
@@ -129,4 +129,9 @@ VAR <- function(return5, W, P, mu1, sd1) {
 conVAR <- function(return5, W, P, mu2, sd2) {
   var1 <- W*(exp(qnorm(P, mean=mu2, sd=sd2))-1)
   return(var1)
+}
+
+scream <- function(y1,y2,y3){
+  mylist <- list(y1,y2,y3)
+  do.call("rbind", lapply(mylist, load))
 }
